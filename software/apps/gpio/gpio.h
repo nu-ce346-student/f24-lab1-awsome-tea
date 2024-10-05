@@ -2,6 +2,7 @@
 
 #include "nrf.h"
 #include "stdbool.h"
+#include <stdio.h>
 
 typedef enum {
   GPIO_INPUT = 0,
