@@ -57,11 +57,6 @@ void gpio_set(uint8_t gpio_num) {
   // Implement me
   // This function should make the pin high
   // It can assume that the pin has already been configured
-  // int temp = 0;
-  // temp = temp << gpio_num;
-  // int mask = 0xFFFFFFFF;
-  // mask = mask & temp;
-  // GPIO_REG_P0->OUT = GPIO_REG_P0->OUT | (1 << gpio_num);
 
   if (gpio_num >= 32) {
     int new_gpio_num = gpio_num - 32;
@@ -80,9 +75,6 @@ void gpio_clear(uint8_t gpio_num) {
   // Implement me
   // This function should make the pin low
   // It can assume that the pin has already been configured
-  // int bit_mask = (1 << gpio_num);
-  // bit_mask = ~(bit_mask);
-  // GPIO_REG_P0->OUT = GPIO_REG_P0->OUT & bit_mask;
 
   int new_gpio_num = gpio_num;
   if (gpio_num >= 32) {

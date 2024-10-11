@@ -52,10 +52,10 @@ int main(void) {
 
 
   //CHECK OFF #11 : -------------------------
-  //write DIR register
-  *(uint32_t*)(0x50000514) = 0x100000;
-  //write OUT register
-  *(uint32_t*)(0x50000504) = 0x100000;
+  // //write DIR register
+  // *(uint32_t*)(0x50000514) = 0x100000;
+  // //write OUT register
+  // *(uint32_t*)(0x50000504) = 0x100000;
   // ----------------------------------------
 
   // loop forever
@@ -110,7 +110,7 @@ int main(void) {
     if (gpio_read(23) == false) {
       gpio_clear(20);
     }
-    // nrf_delay_ms(10);
+    nrf_delay_ms(10);
 }
 }
 
